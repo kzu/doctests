@@ -13,7 +13,7 @@
   <Import Project="site.targets" />
   <!-- If at some point the project overwrites the generic import, just bring it back from the site.targets -->
   <ItemGroup>
-    <None Include="**\*.*" Exclude="*.csproj;*.sln;*.suo;*.user;bin\**\*.*;obj\**\*.*;.gitattributes;.gitignore;_site\**\*.*;.git\**\*.*" />
+	  <None Include="**\*.*" Exclude="*.csproj;*.sln;*.suo;*.user;bin\**\*.*;obj\**\*.*;.gitattributes;.gitignore;_site\**\*.*;.git\**\*.*" />
   </ItemGroup>
   <Target Name="Build">
     <Exec Command="build.cmd" ContinueOnError="false" />

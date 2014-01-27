@@ -5,5 +5,5 @@ title: Your New Jekyll Site
 
 
 <div id="home">
-{% markdown Home.md %}
+{% include Home.md %}
 </div>
