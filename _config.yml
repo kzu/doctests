@@ -1,0 +1,12 @@
+title: Doc Site Test
+description: A test site for jekyll
+exerpt: #great site!
+name: Daniel Cazzulino
+pygments: true
+
+gollum:
+  folder: '_includes'
+  page_yaml:
+    layout: page
+  post_yaml:
+    layout: post

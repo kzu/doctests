@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+  </PropertyGroup>
+  <PropertyGroup>
+    <ProjectGuid>{473471DF-30C6-4B6C-8C64-59DBE3FB2D90}</ProjectGuid>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <StartAction>URL</StartAction>
+    <StartURL>http://localhost:4000/</StartURL>
+  </PropertyGroup>
+  <Import Project="site.targets" />
+  <!-- If at some point the project overwrites the generic import, just bring it back from the site.targets -->
+  <ItemGroup>
+    <None Include="**\*.*" Exclude="*.csproj;*.sln;*.suo;*.user;bin\**\*.*;obj\**\*.*;.gitattributes;.gitignore;_site\**\*.*;.git\**\*.*" />
+  </ItemGroup>
+  <Target Name="Build">
+    <Exec Command="build.cmd" ContinueOnError="false" />
+  </Target>
+</Project>
